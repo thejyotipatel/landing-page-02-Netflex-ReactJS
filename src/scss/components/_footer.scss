@@ -1,0 +1,40 @@
+footer {
+  background-color: $clr-neutral-200;
+  border-top: $border;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+
+  .container {
+    .footer-center {
+      // .footer-links {
+      //   h2 {
+      //     color: $clr-accent-100;
+      //     font-size: $fs-300;
+      //     text-transform: uppercase;
+      //     font-weight: normal;
+      //     margin-bottom: 0.8rem;
+      //   }
+
+      ul {
+        display: grid;
+
+        gap: 0.8rem;
+        li a {
+          // color: $clr-accent-100;
+          // font-size: $fs-200;
+          // text-transform: capitalize;
+          // font-weight: normal;
+        }
+      }
+      // }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  footer {
+    .links {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}

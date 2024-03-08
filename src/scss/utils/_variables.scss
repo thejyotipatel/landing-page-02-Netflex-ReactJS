@@ -1,0 +1,37 @@
+$clr-accent-100: #ffffff; //
+$clr-accent-200: #a3a3a3; //
+$clr-accent-300: #737373; //
+
+$clr-primary-100: #e50914; //#f40612
+$clr-primary-200: #f40612; //hover
+
+$clr-neutral-100: #000000; //
+$clr-neutral-200: #181818; //
+$clr-neutral-300: #000000bf; // navbar
+$clr-neutral-400: #9696964d; //signbtn
+$clr-neutral-500: #9696964d; //hover btn
+
+$border: 1px solid #000000;
+
+$ff-primery: Inter, Avenir, Helvetica, Arial, sans-serif;
+$ff-body: $ff-primery;
+
+$fs-100: 12px;
+//18px
+$fs-200: 13px; // 15px;
+$fs-300: 14px; //18px
+$fs-400: 16px; //22px 1.4
+$fs-500: 18px;
+$fs-600: 24px; //30px
+
+$fw-400: 400;
+$fw-500: 500;
+$fw-600: 600;
+
+$fs-body: calc(10px + 2vmin);
+
+$ts-400: all 0.3s linear;
+$radius: 12px;
+$devider: 2px solid #e1e4e6;
+
+// background-image: linear-gradient(90deg, #333 5%, #181818 95%);
