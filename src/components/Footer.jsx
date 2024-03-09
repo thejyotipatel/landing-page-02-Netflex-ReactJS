@@ -36,7 +36,7 @@ const Footer = () => {
                 )
               })}
             </ul>
- 
+
             <div className='lag'>
               <button className='btn'>
                 <span>
@@ -48,7 +48,7 @@ const Footer = () => {
                 </span>
               </button>
 
-              <p className='country'>Netflix India</p>
+              <p>Netflix India</p>
             </div>
           </div>
         </div>

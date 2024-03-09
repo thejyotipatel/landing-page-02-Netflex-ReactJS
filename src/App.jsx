@@ -16,15 +16,15 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <main className='main'>
-        <HeroContainer />
+      <main className='main'>
+        {/* <HeroContainer />
         <MovieVideosList />
         <EpisodesList />
         <MoreDetailsContainer />
-        <MoreLinkMoviesList />
+        <MoreLinkMoviesList /> */}
         <CommingSoonContainer />
       </main>
-    */}
+
       <Footer />
     </>
   )

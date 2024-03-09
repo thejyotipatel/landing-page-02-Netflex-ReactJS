@@ -3,38 +3,83 @@ footer {
   border-top: $border;
   padding-bottom: 5rem;
   padding-top: 5rem;
-
+  width: 100%;
   .container {
     .footer-center {
-      // .footer-links {
-      //   h2 {
-      //     color: $clr-accent-100;
-      //     font-size: $fs-300;
-      //     text-transform: uppercase;
-      //     font-weight: normal;
-      //     margin-bottom: 0.8rem;
-      //   }
+      // margin: $size-400 0;
+      h2 {
+        margin-bottom: $size-400;
+        color: $clr-accent-200;
+        font-size: $fs-500;
+        text-transform: uppercase;
+        font-weight: normal;
+      }
 
       ul {
         display: grid;
+        grid-template-columns: repeat(4, calc(min(250px, 98%)));
 
-        gap: 0.8rem;
+        gap: 0.5rem;
         li a {
-          // color: $clr-accent-100;
-          // font-size: $fs-200;
-          // text-transform: capitalize;
-          // font-weight: normal;
+          color: $clr-accent-200;
+          line-height: 15px;
+          font-size: $fs-200;
+          text-transform: capitalize;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
-      // }
+
+      .lag {
+        margin-top: $size-400;
+        .btn {
+          background-color: $clr-neutral-100;
+          color: $clr-accent-200;
+          line-height: 15px;
+          font-size: $fs-200;
+          border: $border;
+          border-color: $clr-accent-200;
+          display: flex;
+          gap: $size-100;
+          padding: 0.8rem;
+          span {
+            font-size: $fs-400;
+          }
+        }
+
+        p {
+          margin-top: $size-400;
+          color: $clr-accent-200;
+          line-height: 18px;
+          font-size: $fs-100;
+        }
+      }
     }
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1050px) {
   footer {
-    .links {
-      grid-template-columns: repeat(2, 1fr);
+    .container {
+      .footer-center {
+        ul {
+          grid-template-columns: repeat(3, calc(min(200px, 98%)));
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  footer {
+    .container {
+      .footer-center {
+        ul {
+          grid-template-columns: repeat(2, calc(min(200px, 98%)));
+        }
+      }
     }
   }
 }
