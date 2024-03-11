@@ -83,3 +83,15 @@ footer {
     }
   }
 }
+
+@media (max-width: 280px) {
+  footer {
+    .container {
+      .footer-center {
+        ul {
+          grid-template-columns: repeat(1, calc(min(200px, 98%)));
+        }
+      }
+    }
+  }
+}

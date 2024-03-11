@@ -1,63 +1,72 @@
 .navbar {
+  position: relative;
   border-bottom: $border;
   // position: relative;
   background-color: $clr-neutral-100;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
-  width: 100%;
-  position: fixed;
-  .nav-center {
-    padding: 0.5em 3%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    nav {
-      gap: 0.5rem;
+  .nav-container {
+    background-color: $clr-neutral-100;
+    width: 100vw;
+    position: fixed;
+    // width: calc(min(1200px, 95%));
+    .nav-center {
+      padding: 0.5em 3%;
       display: flex;
+      justify-content: space-between;
       align-items: center;
 
-      h1 {
-        font-size: $fs-200;
-        line-height: 18px;
-        color: $clr-accent-100;
-        color: $clr-accent-100;
-        font-weight: normal;
+      .logo-container {
+        width: fit-content;
       }
-      .btn {
-        font-size: $fs-200;
-        line-height: 18px;
-        color: $clr-accent-100;
-        background-color: $clr-primary-100;
-        text-transform: uppercase;
-        border-radius: 2px;
-        padding: 0.6em 1.8em;
+      nav {
+        gap: 0.5rem;
         display: flex;
-        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
-        &:hover {
-          background-color: $clr-primary-200;
-        }
-      }
-      .btn:last-child {
-        padding: 0.6em 1em;
+        align-items: center;
 
-        border: $border;
-        border-color: $clr-accent-200;
-        background-color: transparent;
-        &:hover {
-          background-color: $clr-neutral-400;
+        h1 {
+          font-size: $fs-200;
+          line-height: 18px;
+          color: $clr-accent-100;
+          color: $clr-accent-100;
+          font-weight: normal;
+        }
+        .btn {
+          font-size: $fs-200;
+          line-height: 18px;
+          color: $clr-accent-100;
+          background-color: $clr-primary-100;
+          text-transform: uppercase;
+          border-radius: 2px;
+          padding: 0.6em 1.8em;
+          display: flex;
+          box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+          &:hover {
+            background-color: $clr-primary-200;
+          }
+        }
+        .btn:last-child {
+          padding: 0.6em 1em;
+
+          border: $border;
+          border-color: $clr-accent-200;
+          background-color: transparent;
+          &:hover {
+            background-color: $clr-neutral-400;
+          }
         }
       }
     }
   }
 }
-
 @media (max-width: 1000px) {
   .navbar {
-    .nav-center {
-      justify-content: space-between;
-      nav {
-        h1 {
-          display: none;
+    .nav-container {
+      .nav-center {
+        justify-content: space-between;
+        nav {
+          h1 {
+            display: none;
+          }
         }
       }
     }
