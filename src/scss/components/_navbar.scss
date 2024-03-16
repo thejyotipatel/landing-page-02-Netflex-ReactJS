@@ -58,6 +58,18 @@
     }
   }
 }
+@media (max-width: 300px) {
+  .navbar {
+    .nav-center {
+      nav {
+        gap: 0.2em;
+        .btn {
+          padding: 0.3em 0.8em;
+        }
+      }
+    }
+  }
+}
 @media (max-width: 1000px) {
   .navbar {
     .nav-container {

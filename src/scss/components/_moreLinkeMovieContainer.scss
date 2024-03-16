@@ -1,0 +1,42 @@
+.container-center {
+  margin-top: $size-600 + $size-400;
+
+  .main-title h1 {
+    color: $clr-accent-100;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34px;
+    margin: $size-200 0;
+  }
+  .cols {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 0.5rem;
+    width: 100%;
+    .cols-item {
+      width: calc(min(390px, 98%));
+      h3 {
+        color: $clr-accent-100;
+        line-height: 22px;
+        font-size: $fs-400;
+        font-weight: normal;
+      }
+      p {
+        color: $clr-accent-200;
+        line-height: 18px;
+        font-size: $fs-300;
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .container-center {
+    .cols {
+      .cols-item {
+        max-width: calc(min(290px, 98%));
+      }
+    }
+  }
+}

@@ -1,15 +1,21 @@
 import SectionTitle from './SectionTitle'
 
-const moviesData = [
-  {
-    id: 1,
-    header: 'Heeramandi: The Diamond Bazaar',
-    describetion:
-      'Sanjay Leela Bhansali brings his majestic signature flair to stories of love and betrayal in the lives of courtesans in pre-independence India.',
-  },
-]
+const moviesData = {
+  id: 1,
+  header: 'Heeramandi: The Diamond Bazaar',
+  describetion:
+    'Sanjay Leela Bhansali brings his majestic signature flair to stories of love and betrayal in the lives of courtesans in pre-independence India.',
+}
 
 const CommingSoonContainer = () => {
+  const MoviesDetails = () => {
+    return (
+      <div className='cols-item'>
+        <h3>{moviesData.header}</h3>
+        <p>{moviesData.describetion}</p>
+      </div>
+    )
+  }
   return (
     <>
       <section className='container'>
@@ -18,10 +24,14 @@ const CommingSoonContainer = () => {
 
           {/* list */}
           <div className='cols'>
-            <div className='cols-item'>
-              <h3>{moviesData[0].header}</h3>
-              <p>{moviesData[0].describetion}</p>
-            </div>
+            <MoviesDetails />
+            <MoviesDetails />
+            <MoviesDetails />
+            <MoviesDetails />
+            <MoviesDetails />
+            <MoviesDetails />
+            <MoviesDetails />
+            <MoviesDetails />
           </div>
         </div>
       </section>
